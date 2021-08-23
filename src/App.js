@@ -1,8 +1,13 @@
 import React from "react";
 import GitHubUser from "./GitHubUser";
+import "./App.css";
 
 function App() {
-    return <GitHubUser login="camchambers"/>
+    return (
+    <div class="app">
+        <GitHubUser login="camchambers"/>
+    </div>
+    )
 }  
 
 export default App;
