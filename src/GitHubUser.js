@@ -2,6 +2,7 @@ import React, {
     useState,
     useEffect
 } from "react";
+import "./GitHubUser.css";
 
 // Fetch data from the GitHub API 
 function GitHubUser({ login }) {
@@ -15,7 +16,7 @@ function GitHubUser({ login }) {
 
     if (data) {
         return (
-            <div>
+            <div class="profile">
                 <h1>{data.login}</h1>
                 {data.email ? <p>{data.email}</p> : ""}
                 <img src={data.avatar_url} width={100} alt="GitHub profile picture" />
